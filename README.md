@@ -41,4 +41,23 @@ ER図等を添付。
 
 # ローカルでの動作方法
 
+% git clone https://github.com/yuta8995/ippuku-app-34750.git
+
+## クローンしたアプリに移動後、Gemをインストール
+% bundle install
+
+## JavaScriptのパッケージをインストール
+% yarn install
+
+## データベースを作成
+% rails db:create
+
+## マイグレーションを実行
+% rails db:migrate
+
+## サーバーを起動
+% rails s
+
+Rubyのバージョン 6.0.0
+
 git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記述。この時、アプリケーション開発に使用した環境を併記することを忘れないこと（パッケージやRubyのバージョンなど）。
