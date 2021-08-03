@@ -13,11 +13,12 @@
         </ul>
       </div>
     <% end %>
-    <p><%= @tweet.text %></p>
-    <span class="name">
-      <a href="/users/<%= @tweet.user.id %>">
-        <span>投稿者</span><%= @tweet.user.nickname %>
-      </a>
-    </span>
+  <span class="name">
+    <a href="/users/<%= @tweet.user.id %>">
+      <span>投稿者</span><%= @tweet.user.nickname %>
+    </a>
+  </span>
   </div>
+  <p><%= @tweet.address %><br>
+  <%= @tweet.text %></p>
 </div>

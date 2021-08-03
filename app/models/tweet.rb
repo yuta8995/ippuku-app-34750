@@ -1,6 +1,7 @@
 class Tweet < ApplicationRecord
   validates :text, presence: true
-  
+  validates :address, presence: true
+
   belongs_to :user
 
   def self.search(search)
