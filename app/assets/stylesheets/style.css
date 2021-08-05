@@ -638,7 +638,7 @@ ul li {
 body,
 html {
   height: 100%;
-  background-color: #f5f5f3;
+  background-color: white;
 }
 
 body {
@@ -655,14 +655,14 @@ body {
   line-height: 1.57;
   letter-spacing: 0.15em;
   font-size: 16px;
-  color: #666;
+  color: black;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #666;
+  color: black;
 }
 
 a:hover {
@@ -707,8 +707,8 @@ form input[type="submit"] {
 header.header div.header__bar.row div.grid-6 a.post {
   padding: 8px 20px;
   font-size: 14px;
-  border: 2px solid #57C3E9;
-  color: #57C3E9;
+  border: 2px solid white;
+  color: white;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
@@ -738,7 +738,7 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 header.header {
   padding: 10px;
   border-bottom: 1px solid #D8D8D8;
-  background-color: #fff;
+  background-color: #57C3E9;
   position: fixed;
   top: 0;
   left: 0;
