@@ -3,6 +3,7 @@ class Tweet < ApplicationRecord
   validates :address, presence: true
 
   belongs_to :user
+  has_one_attached :image
 
   def self.search(search)
     if search != ""
