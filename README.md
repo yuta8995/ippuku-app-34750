@@ -10,8 +10,6 @@ Ippuku (いっぷく)
 
 https://ippuku-app-34750.herokuapp.com/
 
-エラーが発生しているため本番環境での表示ができません。
-
 # テスト用アカウント
 
 Basic認証 ID:admin PASS:2222
@@ -30,7 +28,29 @@ Basic認証 ID:admin PASS:2222
 
 # 実装した機能についての画像やGIFおよびその説明
 
-実装した機能について、それぞれどのような特徴があるのかを列挙する形で記述。画像はGyazoで、GIFはGyazoGIFで撮影すること。
+## 新規登録
+[![Image from Gyazo](https://i.gyazo.com/9af02120c9ac6696da8058bf0e79d184.png)](https://gyazo.com/9af02120c9ac6696da8058bf0e79d184)
+
+## ログイン
+[![Image from Gyazo](https://i.gyazo.com/3971668fe92a7d85fb27c2132dd14276.png)](https://gyazo.com/3971668fe92a7d85fb27c2132dd14276)
+
+## 投稿画面
+[![Image from Gyazo](https://i.gyazo.com/508bb67c62b4a033dd624ee534081bd7.png)](https://gyazo.com/508bb67c62b4a033dd624ee534081bd7)
+
+## 投稿一覧表示
+[![Image from Gyazo](https://i.gyazo.com/4f4a828e388dccc5fabc6298a4b69be0.jpg)](https://gyazo.com/4f4a828e388dccc5fabc6298a4b69be0)
+
+## 詳細表示
+[![Image from Gyazo](https://i.gyazo.com/9765639c9a41b126ad1c0459dbff7f86.gif)](https://gyazo.com/9765639c9a41b126ad1c0459dbff7f86)
+
+## 編集画面
+[![Image from Gyazo](https://i.gyazo.com/87204f02285818e4d3f483e3b74c625d.gif)](https://gyazo.com/87204f02285818e4d3f483e3b74c625d)
+
+## 投稿削除
+[![Image from Gyazo](https://i.gyazo.com/a62c1137fc74fa38b449a599786c2d66.gif)](https://gyazo.com/a62c1137fc74fa38b449a599786c2d66)
+
+## 検索機能
+[![Image from Gyazo](https://i.gyazo.com/2f0ef0463a9e4f5bba4eb4a337266ebb.gif)](https://gyazo.com/2f0ef0463a9e4f5bba4eb4a337266ebb)
 
 # 実装予定の機能
 
@@ -38,7 +58,7 @@ Basic認証 ID:admin PASS:2222
 
 # データベース設計
 
-ER図等を添付。
+ippuku_ER図.dio にER図を作成。
 
 # ローカルでの動作方法
 
