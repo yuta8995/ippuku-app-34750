@@ -1,5 +1,5 @@
 <%= form_with(model: tweet, local: true) do |form| %>
-  <%= form.text_field :image, placeholder: "Image Url" %>
+  <%= form.file_field :image %>
   <%= form.text_field :address, placeholder: "場所名と住所" %>
   <%= form.text_area :text, placeholder: "コメント", rows: "10" %>
   <%= form.submit "SEND" %>
