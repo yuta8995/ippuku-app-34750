@@ -5,20 +5,13 @@ Ippuku (いっぷく)
 # アプリケーション概要
 
 ユーザー登録・ログイン機能、喫煙できる飲食店を投稿・共有。
-
-# URL
-
-https://ippuku-app-34750.herokuapp.com/
-
-# テスト用アカウント
-
-Basic認証 ID:admin PASS:2222
+その他 投稿記事の詳細表示・編集機能・削除機能、検索機能。
 
 # 利用方法
 
 ユーザー登録・ログイン後、ツイート機能のように飲食店内（もしくは喫煙所）の写真、住所や情報を記入し投稿する。また、検索機能で場所を調べることができる。
 
-# 目指した課題解決
+# 制作背景 (意図)
 
 2020年4月以降の法改正により屋内では原則禁煙となったため、喫煙者ユーザー向けに、数少ない喫煙可能飲食店や喫煙場所を投稿・共有できるアプリを作ろうと思った。
 
@@ -52,31 +45,33 @@ Basic認証 ID:admin PASS:2222
 ## 検索機能
 [![Image from Gyazo](https://i.gyazo.com/2f0ef0463a9e4f5bba4eb4a337266ebb.gif)](https://gyazo.com/2f0ef0463a9e4f5bba4eb4a337266ebb)
 
-# 実装予定の機能
+# 課題や今後実装したい機能
 
-ユーザー登録・ログイン機能、投稿機能。投稿記事の詳細表示・編集機能・削除機能。検索機能。
+RSpecの導入とテストコードの記述・実行。
+タグ付け機能 (飲食店・喫煙所のカテゴリ選択)、コメント機能。
 
 # データベース設計
 
-ippuku_ER図.dio にER図を作成。
+## users テーブル
 
-# ローカルでの動作方法
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| nickname           | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
 
-% git clone https://github.com/yuta8995/ippuku-app-34750.git
+### Association
 
-## クローンしたアプリに移動後、Gemをインストール
-% bundle install
+- has_many :tweets
 
-## JavaScriptのパッケージをインストール
-% yarn install
+## tweets テーブル
 
-## データベースを作成
-% rails db:create
+| Column  | Type       | Options           |
+| ------- | ---------- | ----------------- |
+| address | string     | null: false       |
+| text    | string     | null: false       |
+| user    | references | foreign_key: true |
 
-## マイグレーションを実行
-% rails db:migrate
+### Association
 
-## サーバーを起動
-% rails s
-
-Rubyのバージョン 6.0.0
+- belongs_to :user
